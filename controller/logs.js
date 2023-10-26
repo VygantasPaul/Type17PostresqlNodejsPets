@@ -20,7 +20,7 @@ const LOGS_BY_ID = async (req, res) => {
 }
 const DELETE_BY_ID = async (req, res) => {
     try {
-        const logs = await db.query(`DELETE from public.logs WHERE id = ${req.params.id}`);
+        const logs = await db.query(`DELETE from public.logs WHERE  id = ${req.params.id}`);
         return res.status(201).json({ response: logs.rows, status: "Logs" })
     } catch (err) {
         console.log(err);
