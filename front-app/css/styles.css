@@ -1,0 +1,187 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+::placeholder {
+  color: #999999; /* Adjust the color as needed */
+  font-family: Arial, Helvetica, sans-serif;
+}
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .logo .logo-img {
+  height: 70px;
+  width: 100%;
+  display: inline-block;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  padding: 0 0.3rem;
+}
+
+header nav ul li a {
+  color: rgb(236, 136, 55);
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+}
+header nav ul li a:hover {
+  border: 1px solid rgb(236, 136, 55);
+}
+#pet-list-wrap,
+.logs-wrap,
+#med-list-wrap,
+.prescriptions-wrap {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+#med-list-wrap .med-item,
+#pet-list-wrap .pet-item,
+.prescriptions-wrap .presc-item-inner,
+.logs-wrap .log-item-inner,
+#logs-list-wrap .log-item {
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  padding: 3rem 0.7rem;
+  text-decoration: none;
+  color: #444;
+  text-align: center;
+}
+#med-list-wrap .med-item:hover,
+#pet-list-wrap .pet-item:hover,
+.logs-wrap .log-item-inner:hover,
+.prescriptions-wrap .presc-item-inner:hover {
+  border: 1px solid rgb(236, 136, 55);
+}
+
+#pet-list-wrap .pet-item .buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+#pet-list-wrap .pet-item .buttons .btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.3rem;
+}
+
+#pet-list-wrap .pet-item .buttons .delete-btn {
+  color: rgb(236, 136, 55);
+  border: 1px solid rgb(236, 136, 55);
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+#pet-list-wrap .pet-item .buttons .delete-btn:hover {
+  background-color: rgb(236, 136, 55);
+  color: #fff;
+}
+.heading-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.heading-navigation .btn {
+  color: white;
+  border: 1px solid rgb(236, 136, 55);
+  background-color: rgb(236, 136, 55);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+.heading-navigation .btn.active {
+  border: 1px solid rgb(180, 96, 27);
+  background-color: rgb(180, 96, 27);
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.btn {
+  color: white;
+  border: 1px solid rgb(236, 136, 55);
+  background-color: rgb(236, 136, 55);
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  border: 1px solid rgb(180, 96, 27);
+  background-color: rgb(180, 96, 27);
+}
+#logs-wrap,
+#prescriptions-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.response .response-alert {
+  margin-top: 1rem;
+  border: 1px solid rgb(203, 43, 43);
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form select,
+form input,
+form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  border-radius: 0.4rem;
+}
+form button {
+  padding: 1rem;
+  color: #fff;
+  border: 1px solid rgb(236, 136, 55);
+  background-color: rgb(236, 136, 55);
+  font-size: 1rem;
+}
+
+form button:hover {
+  cursor: pointer;
+  border: 1px solid rgb(180, 96, 27);
+  background-color: rgb(180, 96, 27);
+}
